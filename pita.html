@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitagorasz</title>
+</head>
+<body>
+    <fieldset style="width: 15%;">
+        <img src="img/R.png" alt="">
+        <br>
+        <input type="text" name="" id="ao" placeholder="a oldal">
+        <br>
+        <input type="text" name="" id="bo" placeholder="b oldal">
+        <br>
+        <button onclick="szamol(ao.value , bo.value)">Számol</button>
+    </fieldset>
+
+    <p id="eredmeny">Eredmény</p>
+
+    <script>
+        function szamol(a,b){
+            var c = 0
+            c = Math.sqrt(a*a+b*b)
+            document.getElementById("eredmeny").innerHTML = c
+        }
+    </script>
+</body>
+</html>
